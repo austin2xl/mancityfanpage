@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club History | MANCITY FANPAGE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    <header class="header">
+        <div class="nav">
+            <nav>
+                    <ul class="sidebar">
+                    <li class="close" onclick= hideSidebar()><a href="#"><i><img src="image/Icons/Menu.png" alt="menu icon" width="25" height="25"></i></a></li>                                       
+                    <li><a  href="index.html">Home</a></li>
+                    <li><a href="teamstaff.html">Our Team</a></li>
+                    <li><a href="history.html">Club History</a></li>
+                    <li><a  href="signup.html">Sign up</a></li>                          
+                    </ul>
+                <ul>
+                <li><i><img class="imghideonpc" src="image/Home/Logo.png" alt="logo" width="100" height="50"></i></li>
+                <li class="hideonpc" id="icon" onclick= showSidebar()><a href="#"><i><img src="image/Icons/Menu.png" alt="menu icon" width="25" height="25"></i></a></li>                         
+                <li class="hideonmobile"><a  href="index.html">Home</a></li>
+                <li class="hideonmobile"><a href="teamstaff.html">Our Team</a></li>
+                <li class="hideonmobile"><a href="history.html">Club History</a></li>
+                <li class="hideonmobile"><a  href="signup.html">Sign up</a></li> 
+                </ul>
+            </nav>
+        </div>       
+    </header>
+    <div id="wrapper">
+    <main>
+        <h1>CITY OF LEGENDS</h1>
+        <article>
+            <h2>MANCHESTER GLORIOUS LEGACY</h2>
+            <p>Since 1880, Manchester City has woven a storied legacy. From Division One glories to modern Premier League dominance, City's journey is a tapestry of triumphs. Iconic players like Bell, Silva, and Aguero graced the pitch, while historic victories echoed through Etihad Stadium. With a passionate fanbase by its side, Manchester City's rich history stands as a testament to its status as a footballing powerhouse, etching its name in the annals of the beautiful game</p>
+        </article>
+        <h2>TROPHIES</h2>
+        <section>
+        <div class="three-cols">
+            <div>
+                <img src="image/Trophies/UEFA_CUP.png" alt="UEFA_CUP" width="600" height="400">
+                <h3>UEFA CHAMPIONS LEAGUE</h3>
+                <p>X1 Winner<br>Latest win: 2022/23</p>
+            </div>
+            <div>
+                <img src="image/Trophies/Premier_league_cup.png" alt="Premier_league_cup" width="600" height="400">
+                <h3>PREMIER LEAGUE</h3>
+                <p>X9 Winner<br>Latest win: 2022/23</p>
+            </div>
+            <div>
+                <img src="image/Trophies/Barclay_Cup.png" alt="fa cup" width="600" height="400">
+                <h3>FA CUP</h3>
+                <p>X6 Winner<br>Latest win: 2018/19</p>
+            </div>
+            <div>
+                <img src="image/Trophies/EFL_CUP.jpg" alt="EFL_CUP" width="600" height="400">
+                <h3>EFL CUP</h3>
+                <p>X8 Winner<br>Latest win: 2020/21</p>
+            </div>
+            <div>
+                <img src="image/Trophies/Community_Shield.png" alt="shield cup" width="600" height="400">
+                <h3>COMMUNITY SHIELD</h3>
+                <p>X6 Winner<br>Latest win: 2019/20</p>
+            </div>
+            <div>
+                <img src="image/Trophies/Winners_Cup.png" alt="winner cup" width="600" height="400">
+                <h3>UEFA CUP WINNER</h3>
+                <p>X1 Winner<br>Latest win: 1969/1970</p>
+            </div>
+        </div>
+    </section>
+    </main>
+    </div>
+    <footer>
+        <div>
+            <img src="image/Home/Logo.png" alt="logo" width="300" height="150">
+        </div>
+        <small>MANCITY FANPAGE - BEGOUDE RIKONG EMMANUEL AUSTEEN</small>
+    </footer> 
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script> 
+</body>
+</html>

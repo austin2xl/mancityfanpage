@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | MANCITY FANPAGE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/boxicon@2.1.4/css/boxicons.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="nav">            
+            <nav>
+               
+                <ul class="sidebar">
+                    <li class="close"  onclick= hideSidebar()><a href="#"><i><img src="image/Icons/Close.png" alt="menu icon" width="25" height="25"></i></a></li>                                       
+                    <li><a  href="index.html">Home</a></li>
+                    <li><a href="teamstaff.html">Our Team</a></li>
+                    <li><a href="history.html">Club History</a></li>
+                    <li><a  href="signup.html">Sign up</a></li>                          
+                    </ul>
+                <ul>
+                <li><i><img class="imghideonpc" src="image/Home/Logo.png" alt="logo" width="100" height="50"></i></li>
+                <li class="hideonpc" id="icon" onclick= showSidebar()><a href="#"><i><img src="image/Icons/Menu.png" alt="menu icon" width="25" height="25"></i></a></li>                         
+                <li class="hideonmobile"><a  href="index.html">Home</a></li>
+                <li class="hideonmobile"><a href="teamstaff.html">Our Team</a></li>
+                <li class="hideonmobile"><a href="history.html">Club History</a></li>
+                <li class="hideonmobile"><a  href="signup.html">Sign up</a></li> 
+                </ul>
+            </nav>
+        </div>      
+    </header>
+    <div id="wrapper">
+    <main>
+        <article>
+            <h1>MANCITY FANPAGE</h1>
+            <p> Welcome to the ultimate hub for Manchester City fans! 🎉 Whether you bleed blue and white or are just starting your journey into the world of the Sky Blues, you've found your home here. Get ready for a front-row seat to all the thrilling moments, 
+                heart-stopping victories, and unforgettable memories of one of football's most iconic clubs.
+                From historic triumphs to nail-biting matches, this fan page is your go-to destination for everything Manchester City. Dive into the latest news, player updates, match highlights, and exclusive behind-the-scenes content that will keep you connected to the heartbeat of the club.
+                But it's not just about the game; it's about the passionate community that fuels our love for Manchester City. Share your chants, cheers, and celebrations with fellow fans from around the globe. Together, let's paint the world blue and show our unwavering support for the Sky Blues.
+                So, whether you're a die-hard fan or just curious about the magic of Manchester City, join us on this exhilarating journey. Welcome to the Manchester City Fan Page – where the love for football knows no bounds! 💙 #MCFC 
+            </p>
+        </article>
+        <div class="one-cols">
+            <div>
+                <img src="image/Home/Cup_winners.jpg" alt="cup celebration" width="700" height="500">
+                <h2>MANCHESTER CITY'S TRIUMPH</h2>
+                <p>A historic moment uniting fans worldwide in celebration of unparalleled football excellence. #MCFC #UCL</p>
+            </div>
+            <div>
+                <img src="image/Home/Jersey.jpg" alt="mancity jersey" width="700" height="500">
+                <h2>UNVEILLING THE SKY BLUE ELEGANCE</h2>
+                <p>Experience the essence of Sky Blue pride with Manchester City's latest jersey, a blend of tradition and innovation. #MCFC #JerseyLaunch</p>
+            </div>
+            <div>
+                <img src="image/Home/Debruyne.jpg" alt="mancity captain" width="700" height="500" >
+                <h2>CAPTAIN MARVEL</h2>
+                <p>Witness Kevin De Bruyne's mastery as Manchester City's captain, driving the team with skill, vision, and unwavering determination. #MCFC</p>
+            </div>
+        </div>
+        <p>Join the vibrant community of passionate Manchester City fans! Get exclusive updates, behind-the-scenes content, and connect with fellow supporters worldwide. Together, let's celebrate victories, share memories, and experience the thrill of being part of the Sky Blue family. <a href="signup.html">Sign up now!</a> #MCFC</p>
+    </main>
+    </div>
+
+    <footer>
+        <div>
+            <img src="image/Home/Logo.png" alt="logo" width="300" height="150">
+        </div>
+        <small>MANCITY FANPAGE - BEGOUDE RIKONG EMMANUEL AUSTEEN</small>
+    </footer> 
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>  
+</body>
+</html>
